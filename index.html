@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+        integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <div class="nav_icons">
+                <a href="/">
+                    <img class="logo-nav" src="./images/logo-sky.svg" alt="logo-sky">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"  aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" data-target="#navbarTogglerDemo03">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <img src="https://img.icons8.com/windows/25/000000/accessibility2.png" />
+                        </li>
+                        <li class="nav-item">
+                            <img src="https://img.icons8.com/windows/25/000000/last-quarter.png" />
+                        </li>
+                        <li class="nav-item">
+                            <img src="https://img.icons8.com/metro/22/000000/decrease-font.png" />
+                        </li>
+                        <li class="nav-item">
+                            <img src="https://img.icons8.com/metro/22/000000/increase-font.png" />
+                        </li>
+                    </ul>
+                    <div class="nav-auth">
+                        <ul class="navbar-nav mr-auto ">
+                            <li>
+                                <i class="fas fa-play"></i> <b> Play</b>
+                            </li>
+
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li>
+                                <i class="fas fa-user"></i> <b> Entrar</b>
+                            </li>
+                            <li>
+                                <i class="fas fa-search"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </nav>
+        <section>
+            <div class="nav col-12 col-md-auto mb-2 justify-content-space-around mb-md-0">
+                <ul class="nav" id="sidebar">
+                    <li class="link-sidebar actives">
+                        <a href="" class="nav-link text-danger">Filmes</a>
+                    </li>
+                    <li class="link-sidebar">
+                        <a href="" class="nav-link px-2 link-dark">Séries</a>
+                    </li>
+                    <li class="link-sidebar">
+                        <a href="" class="nav-link px-2 link-dark">Canais</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="carousel">
+                <div><img
+                        src="https://disneyplusbrasil.com.br/wp-content/uploads/2021/05/Cruella-Disney-Plus-1024x576.jpg"
+                        alt="cruela" class="p-2 " width="1920px" /></div>
+                <div><img
+                        src="https://cafecomnerd.com.br/wp-content/uploads/2021/05/viuva-negra-novos-posteres-individuais-dos-personagens-do-filme.jpg"
+                        alt="viuva negra" class="p-2" width="1920px" /></div>
+                <div><img
+                        src="https://lumiere-a.akamaihd.net/v1/images/aladdin-hero-banner_c8bef621.jpeg?region=0,0,1920,800"
+                        alt="aladdin" class="p-2 " width="1920px" /></div>
+                <div><img src="https://i.pinimg.com/originals/59/36/fa/5936fa0c0208d8500ddc0d071a796621.jpg"
+                        alt="Avangers" class="p-2 " width="1920px" /></div>
+                <div><img
+                        src="https://lig10.com.br/wp-content/uploads/2020/04/Aves-de-Rapina-Banner-Lig10-Provedor-1.jpg"
+                        alt="aves de rapina" class="p-2 " width="1920px" /></div>
+                <div><img src="https://pursuenews.com/wp-content/uploads/2017/05/Wonder-Woman-Gal-Gadot.png"
+                        alt="mulher maravilha" class="p-2 " /></div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="container">
+            <h4 class="text-dark">Venha assistir os melhores suspenses</h4>
+            <div class="carousel-drama mb-4">
+                <p id="mensagemErro" class="mensagem-erro"></p>
+            </div>
+            <h4 class="text-dark">Confira nossa sessão de drama</h4>
+            <div class="carousel-suspense mb-4">
+                <p id="mensagemErro" class="mensagem-erro"></p>
+            </div>
+            <h4 class="text-dark">Que tal se divertir um pouco?</h4>
+            <div class="carousel-comedia mb-4">
+                <p id="mensagemErro" class="mensagem-erro"></p>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer font-small bg-light">
+        <section class="card bg-light">
+            <div class="row py-2 d-flex align-items-center">
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <img src="./images/sky-light-default.svg">
+                </div>
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+                    <a class="text-decoration-none text-dark">
+                        <i class="fab fa-facebook-f white-text m-2"> </i>
+                    </a>
+                    <a class="text-decoration-none text-dark">
+                        <i class="fab fa-twitter white-text m-2"> </i>
+                    </a>
+                    <a class="text-decoration-none text-dark">
+                        <i class="fab fa-youtube m-2"></i>
+                    </a>
+                    <a class="text-decoration-none text-dark">
+                        <i class="fab fa-instagram white-text m-2"> </i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="row mt-3 dark-grey-text m-2">
+            <div class="col-md-4 col-lg-5 col-xl-4">
+                <img src="./images/LogoAppSKY.png" class="float-left" id="minha-sky">
+                <b>Baixe no seu celular o app Minha SKY e divirta-se.</b>
+                <div class="row mt-2" id="footer-apps">
+                    <div class="col-md-6 col-lg-4 col-xl-6 mb-4">
+                        <img src="./images/button-apple-store-light-default.svg" alt="">
+
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-6 mb-4">
+                        <img src="./images/button-google-play-light-default.svg" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">
+                    Sobre
+                </h6>
+                <p>Nossa historia</p>
+                <p>Imprensa</p>
+                <p>Prêmios conquistados</p>
+                <p>Credenciamento</p>
+                <p>Trabalhe com a gente</p>
+                <p>Promoção</p>
+                <br>
+                <h6 class="text-uppercase font-weight-bold">
+                    Ajuda
+                </h6>
+                <p>Central de Ajuda</p>
+                <p>Manuais</p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase font-weight-bold">
+                    Nossas responsabilidades
+                </h6>
+                <p>Conselho aos usuários</p>
+                <p>Pesquisa Anatel</p>
+                <p>Relatórios de transparência</p>
+                <p>Responsabilidade Social</p>
+                <p>Acessibilidade</p>
+                <br>
+                <h6 class="text-uppercase font-weight-bold">SKY Empresas</h6>
+            </div>
+        </section>
+
+        <section class="card py-2">
+            <div class="container text-center">
+                Início | Política de Privacidade | Contratos gerais | Contratos Pré-pago | Cancelamento | Ouvidoria |
+                Consumidor.gov
+            </div>
+        </section>
+        <section class="p-3">
+            ® Todos os direitos reservados 2018. Todas as marcas SKY e qualquer propriedade intelectual inserida nelas
+            são de propriedade da SKY Internacional AG e usadas pela SKY Serviços de Banda Larga LTDA. mediante licença.
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+        </script>
+       
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToScroll: 1,
+            variableWidth: true,
+            centerMode: true,
+            centerPadding: '10px',
+            slidesToShow: 3,
+            arrows: false,
+
+        });
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
