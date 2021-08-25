@@ -4,7 +4,37 @@ $('.carousel-drama, .carousel-suspense, .carousel-comedia').slick({
     variableWidth: true,
     slidesToShow: 1,
 });
-
+$('.carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToScroll: 1,
+    variableWidth: true,
+    centerMode: true,
+    centerPadding: '10px',
+    slidesToShow: 3,
+    arrows: false,
+    responsive: [
+{
+breakpoint: 768,
+settings: {
+arrows: false,
+centerMode: true,
+centerPadding: '40px',
+slidesToShow: 3
+}
+},
+{
+breakpoint: 480,
+settings: {
+arrows: false,
+centerMode: true,
+centerPadding: '40px',
+slidesToShow: 1
+}
+}
+]
+});
 const mensagemErro = document.getElementById('mensagemErro')
 
 const api = () => {
@@ -21,9 +51,7 @@ const api = () => {
 
                 response.json()
                         .then(data => {
-                        console.log(data)
                         for (let i = 0; i < 31; i++) {
-                            console.log(data.contents[i].categories)
                             data.contents[i].categories.includes("Drama") ? dramalist += '<div class="m-2"><img class="rounded " src= "' + data.contents[i].images[0].url + '"></div>' : dramalist += ''
                             data.contents[i].categories.includes("Suspense") ? suspenselist += '<div class="m-2"><img class="rounded" src= "' + data.contents[i].images[0].url + '"></div>' : suspenselist += ''
                             data.contents[i].categories.includes("Comédia") ? comedialist += '<div class="m-2"><img class="rounded " src= "' + data.contents[i].images[0].url + '"></div>' : comedialist += ''

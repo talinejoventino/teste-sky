@@ -59,6 +59,9 @@ li{
     .banner, .banner img {
         height: 382px;
     }
+    .logo-info{
+        color: red;
+    }
 }
 
 .slick-prev.slick-arrow:before, .slick-next.slick-arrow:before{
